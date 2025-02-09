@@ -9,10 +9,125 @@
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 <!-- Responsive -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="css/responsive.css" rel="stylesheet">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="css/responsive.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]--> 
+
+<!-- CSS Styling -->
+<style>
+    .founder-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .team-block_one {
+        width: 30%;
+    }
+    .founder-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .team-block_one {
+        width: 30%;
+    }
+
+    .founder-info {
+        width: 60%;
+    }
+
+    @media (max-width: 768px) {
+        .founder-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .team-block_one, .founder-info {
+            width: 100%;
+        }
+    }
+
+    .callbacks_container {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .rslides {
+        
+        padding: 20px;
+        background: #d0a26d;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-size: 18px;
+        color: #555;
+    }
+
+    .testi-subscript p {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #007BFF;
+    }
+
+    .founder-info {
+        width: 60%;
+    }
+
+    @media (max-width: 768px) {
+        .founder-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .team-block_one, .founder-info {
+            width: 100%;
+        }
+    }
+
+    .rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+</style>
 
 </head>
 
@@ -31,65 +146,38 @@
                 <div class="main-box clearfix">
                     <!--Logo-->
                     <div class="logo-box">
-                         <div class="logo"><a href="index.html" title="Archway HTML Template"><img src="images/logo.png" alt="" title="Archway HTML Template"></a></div>
+                        <div class="logo">
+                            <a href="index-2.html" title="Sigma Interio" 
+                               style="color: #cd8507; text-decoration: none; display: block; padding-top: 15px; font-size: 35px; font-family: sans-serif; font-weight: bold;">
+                                Sigma Interio <span style="font-size: 16px; display: block; color: #4b4b4b;">Modern Designing</span>
+                            </a>
+                        </div>
+                        
                     </div>
 
                     <div class="nav-box clearfix">
                         <!--Nav Outer-->
-                        <div class="nav-outer clearfix">         
-                            <nav class="main-menu">
-                                <ul class="navigation clearfix">
-                                    <li class="dropdown"><a href="index.html">Main <span class="st">start from here</span></a>
-                                        <ul>
-                                            <li><a href="index.html">Home Defaut</a></li>
-											<li><a href="index-2.html">Type 02</a></li>
-                                            <li><a href="index-3.html">Type 03</a></li>
-                                            <li><a href="index-4.html">Yellow Skin</a></li>
-                                            <li class="dropdown"><a href="#">Sliders</a>
-                                                <ul>
-                                                    <li><a href="index-5.html">Native Slider</a></li>
-                                                    <li><a href="index-6.html">Interactive Slider</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="index-7.html">Personal</a></li>
-                                            <li><a href="index-8.html">Horizontal Accordion</a></li>
-                                            <li><a href="index-9.html">Carousel</a></li>
-                                            <li><a href="index-10.html">interactive Carousel</a></li>
-                                            <li><a href="index-11.html">Minimal Menu</a></li>
-											<li><a href="index-12.html">Creative Carousel</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a href="about.html">About <span class="st">what we do</span></a>
-                                        <ul>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="services.html">Our Services</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a href="portfolio-1.html">Work <span class="st">recent work</span></a>
-                                        <ul>
-                                            <li><a href="portfolio-1.html">Portfolio Default</a></li>
-                                            <li><a href="portfolio-2.html">Portfolio Masonry 01</a></li>
-                                            <li><a href="portfolio-3.html">Portfolio Masonry 02</a></li>
-                                            <li><a href="portfolio-4.html">Portfolio Grid</a></li>
-                                            <li class="dropdown"><a href="project-single-1.html">Project Single</a>
-                                                <ul>
-                                                    <li><a href="project-single-1.html">Single Project 01</a></li>
-                                                    <li><a href="project-single-2.html">Single Project 02</a></li>
-                                                    <li><a href="project-single-3.html">Single Project 03</a></li>
-                                                    <li><a href="project-single-4.html">Single Project 04</a></li>
-                                                    <li><a href="project-single-5.html">Single Project 05</a></li>
-                                                    <li><a href="project-single-6.html">Single Project 06</a></li>
-                                                    <li><a href="project-single-7.html">Single Project 07</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog.html">Blog <span class="st">what’s new</span></a></li>
-                                </ul>
-                            </nav>
-                            <!-- Main Menu End-->
-                        </div>
+
+                    <!-- Desktop view -->
+                    <div class="nav-outer clearfix" style="background: rgba(0, 0, 0, 0.5); padding: 15px;">
+                        <nav class="main-menu">
+                            <ul class="navigation clearfix" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+                                <li class="current dropdown">
+                                    <a href="index-2.html" style="color: rgb(255, 255, 255); text-decoration: none; padding: 10px 15px; display: inline-block;">Main</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="about.html" style="color: rgb(255, 255, 255); text-decoration: none; padding: 10px 15px; display: inline-block;">About</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="portfolio-3.html" style="color: rgb(255, 255, 255); text-decoration: none; padding: 10px 15px; display: inline-block;">Work</a>
+                                </li>
+                                <li>
+                                    <a href="services.html" style="color: rgb(255, 255, 255); text-decoration: none; padding: 10px 15px; display: inline-block;">Services</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
                         <!--Nav Outer End-->
 
                         <div class="links-box clearfix">
@@ -123,43 +211,27 @@
         <div class="hidden-bar-wrapper">
             <div class="hidden-bar-closer"><span class="icon"><svg class="icon-close" role="presentation" viewBox="0 0 16 14"><path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path></svg></span></div>
             <div class="nav-logo-box">
-                <div class="logo"><a href="index.html" title="Archway HTML Template"><img src="images/logo-2.png" alt="" title="Archway HTML Template"></a></div>
-            </div>
+                <div class="logo">
+                    <a href="index-2.html" title="Sigma Interio" 
+                       style="color: #e37928; text-decoration: none; display: block; font-size: 24px; font-weight: bold;">
+                        Sigma Interio <span style="font-size: 16px; display: block; color: #87666e;">Modern Designing</span>
+                    </a>
+                </div>            </div>
             <!-- .Side-menu -->
             <div class="side-menu">
-                 <ul class="navigation clearfix">
-                    <li class="current dropdown"><a href="index.html">Main</a>
-                           
-                    </li>
-                    <li class="dropdown"><a href="about.html">About</a>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="services.html">Our Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="portfolio-1.html">Work</a>
-                        <ul>
-                            <li><a href="portfolio-1.html">Portfolio Default</a></li>
-                            <li><a href="portfolio-2.html">Portfolio Masonry 01</a></li>
-                            <li><a href="portfolio-3.html">Portfolio Masonry 02</a></li>
-                            <li><a href="portfolio-4.html">Portfolio Grid</a></li>
-                            <li class="dropdown"><a href="project-single-1.html">Project Single</a>
-                                <ul>
-                                    <li><a href="project-single-1.html">Single Project 01</a></li>
-                                    <li><a href="project-single-2.html">Single Project 02</a></li>
-                                    <li><a href="project-single-3.html">Single Project 03</a></li>
-                                    <li><a href="project-single-4.html">Single Project 04</a></li>
-                                    <li><a href="project-single-5.html">Single Project 05</a></li>
-                                    <li><a href="project-single-6.html">Single Project 06</a></li>
-                                    <li><a href="project-single-7.html">Single Project 07</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </div><!-- /.Side-menu -->
+                <ul class="navigation clearfix">
+                   <li class="current dropdown"><a href="index-2.html">Main</a>
+                       
+                   </li>
+                   <li class="dropdown"><a href="about.html">About</a>
+                      
+                   </li>
+                   <li class="dropdown"><a href="portfolio-3.html">Work</a>
+                       
+                   </li>
+                   <li><a href="services.html">Services</a></li>
+               </ul>
+           </div><!-- /.Side-menu --><!-- /.Side-menu -->
             
             <div class="links-box clearfix">
                 <div class="clearfix">
@@ -173,10 +245,10 @@
     <!-- / Hidden Bar -->
 
     <!-- Page Title -->
-    <section class="page-title" style="background-image: url(images/background/page-title.jpg);">
+    <section class="page-title" style="background-image: url(images/background/13m.jpg);">
         <div class="auto-container">
-            <h2>about us</h2>
-            <h1>Company</h1>
+            <!-- <h3>about us</h3> -->
+            <h2>About-Us</h2>
         </div>
     </section>
     <!-- End Page Title -->
@@ -190,10 +262,10 @@
                     <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
                         <div class="sec-title">
                             <div class="subtitle"><span>Planning</span></div>
-                            <h2>Architecture that elevates and inspires everyday life.</h2>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                            <h2>Sigma Interio</h2>
+                            <div class="text">Is one of the emerging company in the Interior Design market of central India. We focus on the the quality and service that we provide for our customer and Always customer is king for us.</div>
                             <div class="link-box">
-                                <a href="portfolio-1.html" class="theme-btn btn-style-two"><span class="btn-box"><span class="btn-txt">Our Services</span><i class="btn-arrow fal fa-arrow-right"></i></span></a>
+                                <a href="portfolio-3.html" class="theme-btn btn-style-two"><span class="btn-box"><span class="btn-txt">Our Services</span><i class="btn-arrow fal fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -212,139 +284,52 @@
     <section class="team-one style-two">
         <div class="auto-container">
             <div class="sec-title">
-                <h2>Meet thee Team</h2>
+                <h2>Meet the Founder</h2>
             </div>
-            <div class="team-carousel owl-carousel owl-theme">
-
+    
+            <!-- Flex Container for Photo & Information -->
+            <div class="founder-container">
                 <!-- Team Block One -->
                 <div class="team-block_one">
                     <div class="inner-box">
                         <div class="content">
-                            <h3><a href="#">John Smith</a></h3>
-                            <div class="designation">Architect</div>
+                            <h3><a href="#">Afeef Shaikh</a></h3>
+                            <div class="designation">Founder</div>
                         </div>
                         <div class="image">
-                            <img src="images/resource/team-7.png" alt="" />
+                            <img src="images/resource/IMG-20190705-WA0004.jpg" alt="Afeef Shaikh" />
                         </div>
                         <div class="social-links">
                             <ul class="clearfix">
-                                <li><a href="#"><i class="icon"><img src="images/resource/linkedin.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/twitter.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/facebook.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/instagram.svg" alt="" title=""></i></a></li>
+                                <li><a href="#"><i class="icon"><img src="images/resource/twitter.svg" alt="Twitter"></i></a></li>
+                                <li><a href="#"><i class="icon"><img src="images/resource/facebook.svg" alt="Facebook"></i></a></li>
+                                <li><a href="#"><i class="icon"><img src="images/resource/instagram.svg" alt="Instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
-                <!-- Team Block One -->
-                <div class="team-block_one">
-                    <div class="inner-box">
-                        <div class="content">
-                            <h3><a href="#">Bob Nathan</a></h3>
-                            <div class="designation">Manager</div>
-                        </div>
-                        <div class="image">
-                            <img src="images/resource/team-8.png" alt="" />
-                        </div>
-                        <div class="social-links">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="icon"><img src="images/resource/linkedin.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/twitter.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/facebook.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/instagram.svg" alt="" title=""></i></a></li>
-                            </ul>
-                        </div>
+    
+                <!-- Founder Information -->
+                <div class="founder-info">
+                    <h3 class="w3ls-title1">Message From <span>Founder</span></h3>
+                    <br />
+                    <br />
+                    <div class="team-w3lstext">
+                        <h4><span>Afeef Shaikh,</span> Founder</h4>
                     </div>
+                    <p><strong>Education-</strong> BSc Interior Design (Cadence Design Academy, Nagpur)</p>
+                    <p style="text-align: justify;">
+                        He started his career in 2013 in the interior industry. Specializing in civil work, he has excellent project management and team-handling skills. His design expertise makes him a perfectionist in the interior sector.
+                        Early in his career, working with architects helped him understand building structures and bungalow designs. In Nagpur, he has successfully designed numerous bungalows, consistently earning client appreciation.
+                        His focus is on delivering projects within a low budget, making dream homes accessible to everyone.
+                    </p>
                 </div>
-
-                <!-- Team Block One -->
-                <div class="team-block_one">
-                    <div class="inner-box">
-                        <div class="content">
-                            <h3><a href="#">Billy Bolt</a></h3>
-                            <div class="designation">Support</div>
-                        </div>
-                        <div class="image">
-                            <img src="images/resource/team-9.png" alt="" />
-                        </div>
-                        <div class="social-links">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="icon"><img src="images/resource/linkedin.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/twitter.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/facebook.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/instagram.svg" alt="" title=""></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Block One -->
-                <div class="team-block_one">
-                    <div class="inner-box">
-                        <div class="content">
-                            <h3><a href="#">John Smith</a></h3>
-                            <div class="designation">Architect</div>
-                        </div>
-                        <div class="image">
-                            <img src="images/resource/team-7.png" alt="" />
-                        </div>
-                        <div class="social-links">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="icon"><img src="images/resource/linkedin.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/twitter.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/facebook.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/instagram.svg" alt="" title=""></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Block One -->
-                <div class="team-block_one">
-                    <div class="inner-box">
-                        <div class="content">
-                            <h3><a href="#">Bob Nathan</a></h3>
-                            <div class="designation">Manager</div>
-                        </div>
-                        <div class="image">
-                            <img src="images/resource/team-8.png" alt="" />
-                        </div>
-                        <div class="social-links">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="icon"><img src="images/resource/linkedin.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/twitter.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/facebook.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/instagram.svg" alt="" title=""></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Block One -->
-                <div class="team-block_one">
-                    <div class="inner-box">
-                        <div class="content">
-                            <h3><a href="#">Billy Bolt</a></h3>
-                            <div class="designation">Support</div>
-                        </div>
-                        <div class="image">
-                            <img src="images/resource/team-9.png" alt="" />
-                        </div>
-                        <div class="social-links">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="icon"><img src="images/resource/linkedin.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/twitter.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/facebook.svg" alt="" title=""></i></a></li>
-                                <li><a href="#"><i class="icon"><img src="images/resource/instagram.svg" alt="" title=""></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
+    
+    
+    
     <!-- End Team One -->
 
     <!--About Section-->
@@ -425,12 +410,54 @@
                     <div class="inner-box">
                         <div class="author-box">
                             <div class="author-image">
+                                <img src="images/resource/pro4.jpg" alt="" />
+                            </div>
+                            <strong>John</strong>
+                            <div class="designation"></div>
+                        </div>
+                        <div class="text">I highly recommend Sigma Interio for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block One -->
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="author-box">
+                            <div class="author-image">
+                                <img src="images/resource/pro3.jpg" alt="" />
+                            </div>
+                            <strong>Ibrahim</strong>
+                            <div class="designation">Khan</div>
+                        </div>
+                        <div class="text">I highly recommend Sigma Interio for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block One -->
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="author-box">
+                            <div class="author-image">
+                                <img src="images/resource/pro2.png" alt="" />
+                            </div>
+                            <strong>Amaan Faraz</strong>
+                            <div class="designation"></div>
+                        </div>
+                        <div class="text">I highly recommend Sigma Interio for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block One -->
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="author-box">
+                            <div class="author-image">
                                 <img src="images/resource/author-1.png" alt="" />
                             </div>
-                            <strong>John Smith</strong>
-                            <div class="designation">CEO at TF</div>
+                            <strong>Kundan</strong>
+                            <div class="designation"></div>
                         </div>
-                        <div class="text">I highly recommend ARCHWAY for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
+                        <div class="text">I highly recommend Sigma Interio for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
                     </div>
                 </div>
 
@@ -441,10 +468,10 @@
                             <div class="author-image">
                                 <img src="images/resource/author-2.png" alt="" />
                             </div>
-                            <strong>John Smith</strong>
-                            <div class="designation">CEO at TF</div>
+                            <strong>Harish</strong>
+                            <div class="designation"></div>
                         </div>
-                        <div class="text">I highly recommend ARCHWAY for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
+                        <div class="text">I highly recommend Sigma Interio for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
                     </div>
                 </div>
 
@@ -453,54 +480,12 @@
                     <div class="inner-box">
                         <div class="author-box">
                             <div class="author-image">
-                                <img src="images/resource/author-3.png" alt="" />
+                                <img src="images/resource/pro5.jpg" alt="" />
                             </div>
-                            <strong>John Smith</strong>
-                            <div class="designation">CEO at TF</div>
+                            <strong>Vinay M</strong>
+                            <div class="designation"></div>
                         </div>
-                        <div class="text">I highly recommend ARCHWAY for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
-                    </div>
-                </div>
-
-                <!-- Testimonial Block One -->
-                <div class="testimonial-block-one">
-                    <div class="inner-box">
-                        <div class="author-box">
-                            <div class="author-image">
-                                <img src="images/resource/author-1.png" alt="" />
-                            </div>
-                            <strong>John Smith</strong>
-                            <div class="designation">CEO at TF</div>
-                        </div>
-                        <div class="text">I highly recommend ARCHWAY for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
-                    </div>
-                </div>
-
-                <!-- Testimonial Block One -->
-                <div class="testimonial-block-one">
-                    <div class="inner-box">
-                        <div class="author-box">
-                            <div class="author-image">
-                                <img src="images/resource/author-2.png" alt="" />
-                            </div>
-                            <strong>John Smith</strong>
-                            <div class="designation">CEO at TF</div>
-                        </div>
-                        <div class="text">I highly recommend ARCHWAY for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
-                    </div>
-                </div>
-
-                <!-- Testimonial Block One -->
-                <div class="testimonial-block-one">
-                    <div class="inner-box">
-                        <div class="author-box">
-                            <div class="author-image">
-                                <img src="images/resource/author-3.png" alt="" />
-                            </div>
-                            <strong>John Smith</strong>
-                            <div class="designation">CEO at TF</div>
-                        </div>
-                        <div class="text">I highly recommend ARCHWAY for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
+                        <div class="text">I highly recommend Sigma Interio for their exceptional architecture services. Their team is highly skilled and experienced, and their attention to detail is second to none.</div>
                     </div>
                 </div>
 
@@ -510,67 +495,132 @@
     <!-- End Testimonial One -->
 
     <!--Sponsors Section-->
-    <section class="sponsors-section">
-        <div class="auto-container">
+</div>
+<div class="about-agileinfo w3layouts">
+    <div class="col-md-12 about-wthree-grids">
+        <div class="testi">
+            <h3 class="w3ls-title1" style="text-align: center;">Vision</h3>
+            <!-- Add this before responsiveSlides.js -->
+            <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
+            
+            <script>
+                $(document).ready(function () {
+                    $("#slider5").responsiveSlides({
+                        auto: true,
+                        pager: true,
+                        nav: true,
+                        speed: 500,
+                        namespace: "callbacks",
+                        before: function(index) {
+                            $(".testi-slider p, .testi-subscript").hide();
+                        },
+                        after: function(index) {
+                            $(".rslides li:eq(" + (index - 1) + ") .testi-slider p").fadeIn(1000, function () {
+                                $(".rslides li:eq(" + (index - 1) + ") .testi-subscript").fadeIn(1000);
+                            });
+                        }
+                    });
+            
+                    $(".testi-slider p, .testi-subscript").hide();
+                    $(".rslides li:first-child .testi-slider p").fadeIn(1000, function () {
+                        $(".rslides li:first-child .testi-subscript").fadeIn(1000);
+                    });
+                });
+            </script> -->
+            
 
-            <div class="carousel-box">
-                <div class="sponsor-carousel owl-theme owl-carousel">
-                    <!--Block-->
-                    <div class="sponsor-block">
-                        <div class="image"><a href="#"><img src="images/resource/client-1.png" alt="" title=""></a></div>
-                    </div>
-                    <!--Block-->
-                    <div class="sponsor-block">
-                        <div class="image"><a href="#"><img src="images/resource/client-2.png" alt="" title=""></a></div>
-                    </div>
-                    <!--Block-->
-                    <div class="sponsor-block">
-                        <div class="image"><a href="#"><img src="images/resource/client-3.png" alt="" title=""></a></div>
-                    </div>
-                    <!--Block-->
-                    <div class="sponsor-block">
-                        <div class="image"><a href="#"><img src="images/resource/client-4.png" alt="" title=""></a></div>
-                    </div>
-                    <!--Block-->
-                    <div class="sponsor-block">
-                        <div class="image"><a href="#"><img src="images/resource/client-5.png" alt="" title=""></a></div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </section>
-
-    <!--Subscribe Section-->
-    <section class="subscribe-section">
-        <div class="bg-layer" style="background-image: url(images/background/pattern-2.jpg);"></div>
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="row clearfix">
-                    <div class="text-col col-xl-8 col-lg-12 col-md-12 col-sm-12">
-                        <div class="inner">
-                            <h2>Subscribe to our newsletter today!</h2>
-                            <div class="text">Don't miss out on the latest in architecture and design</div>
-                        </div>
-                    </div>
-                    <div class="form-col col-xl-4 col-lg-12 col-md-12 col-sm-12">
-                        <div class="inner">
-                            <div class="form-box subscribe-form">
-                                <form method="post" action="contact.html">
-                                    <div class="form-group">
-                                        <div class="field-inner">
-                                            <input type="email" name="email" value="" placeholder="Your e-mail" required>
-                                        </div>
-                                        <button type="submit" class="theme-btn"><i class="icon fal fa-arrow-right"></i></button>
-                                    </div>
-                                </form>
+            <div class="callbacks_container" style="background-color: #b68e60; border: 2px solid #342100; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); text-align: center; font-size: 18px; color: #000000;">
+                <ul class="rslides" id="slider5">
+                    <li>
+                        <div class="testi-slider">
+                            <p>“ It’s everyone right to get a dream home even if they have less money, I focus on what we can do best to make their property pretty and comforting. “</p>
+                            <div class="testi-subscript">
+                                <p><a href="#">Says Afeef,</a> Co-founder</p>
+                                <span class="w3-agilesub"></span>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                    <li>
+                        <div class="testi-slider">
+                            <p>“ Living place should be warm and comforting, every property or project is special because it’s reflect Individuality of the people staying in them. “</p>
+                            <div class="testi-subscript">
+                                <p><a href="#">Says Sneha,</a> Founder</p>
+                                <span class="w3-agilesub"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="testi-slider">
+                            <p>“ Perfect design is incomplete without good material, colour combination and lighting, if these three elements are perfect then any room will look amazing. ”</p>
+                            <div class="testi-subscript">
+                                <p><a href="#">Says Shizza,</a> Design Partners</p>
+                                <span class="w3-agilesub"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <!-- jQuery & ResponsiveSlides.js -->
+            <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
+            
+            <script>
+                $(document).ready(function () {
+                    $("#slider5").responsiveSlides({
+                        auto: true,
+                        pager: false,
+                        nav: false,
+                        speed: 800,
+                        timeout: 4000,
+                        namespace: "callbacks",
+                        before: function (index) {
+                            $(".testi-box").hide();
+                        },
+                        after: function (index) {
+                            $(".rslides li:eq(" + (index - 1) + ") .testi-box").fadeIn(1000);
+                        }
+                    });
+            
+                    // Initial fade-in for the first slide
+                    $(".rslides li:first-child .testi-box").fadeIn(1000);
+                });
+            </script>
+            
+            <style>
+                .callbacks_container {
+                    width: 100%;
+                    max-width: 600px;
+                    margin: auto;
+                    text-align: center;
+                    position: relative;
+                }
+            
+                .testi-box {
+                    padding: 20px;
+                    background: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                    text-align: center;
+                    font-size: 18px;
+                    color: #555;
+                    display: none; /* Initially hidden for animation */
+                }
+            
+                .testi-subscript p {
+                    font-weight: bold;
+                    margin-top: 10px;
+                    color: #007BFF;
+                }
+            </style> -->
+            
+    <div class="clearfix"></div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!--Main Footer-->
     <footer class="main-footer">
@@ -581,25 +631,15 @@
                         <div class="big-col info-col col-xl-6 col-lg-6 col-md-12 col-sm-12">    
                             <div class="row clearfix">
 
-                                <div class="footer-column col-lg-5 col-md-6 col-sm-12">
-                                    <div class="footer-widget links-widget">
-                                        <h5>General Contact</h5>
-                                        <div class="info">
-                                            <ul>
-                                                <li class="phone"><a href="tel:+399123456">T: +399 123 456</a></li>
-                                                <li class="email"><a href="mailto:generalinquiries@archway.com">E: generalinquiries@archway.com</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                     <div class="footer-widget links-widget">
                                         <h5>Working days</h5>
                                         <div class="info">
                                             <ul>
-                                                <li>Monday-Friday: 08-17:00</li>
-                                                <li>Saturday-Sunday: Closed</li>
+                                                <li>Monday-Saturday: 10:00am - 09:00pm</li>
+                                                <li>Sunday: Closed</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -620,40 +660,33 @@
 
                                 <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                     <div class="footer-widget links-widget">
-                                        <h5>New York</h5>
+                                        <h5>Nagpur</h5>
                                         <div class="info">
                                             <ul>
-                                                <li class="address">Circle Streeet 43, Allen watson</li>
-                                                <li class="phone"><a href="tel:+18(0)443456">T: +18 (0) 443 456</a></li>
-                                                <li class="email"><a href="mailto:archwayus@support.com">E: archwayus@support.com</a></li>
+                                                <li class="address">Plot No. 2, Suri Layout, Behind Tirupati Bank, <br>Borgaon Road, Nagpur-13</li>
+                                                <li class="phone"><a href="tel:+91 8830426918">T: +91 8830426918</a></li>
+                                                <li class="email"><a href="mailto:contact@sigmainterio.in">E: contact@sigmainterio.in</a></li>
                                             </ul>
                                         </div>
-                                        <h5>Australia</h5>
+                                        <h5></h5>
                                         <div class="info">
                                             <ul>
-                                                <li class="address">Level 1/302 Swanston St, Carlton VIC  <br>2042, Australia</li>
-                                                <li class="phone"><a href="tel:+23(0)132456">T: +23 (0) 132 456</a></li>
-                                                <li class="email"><a href="mailto:archwayus@support.com">E: archwayaut@info.com</a></li>
+                                                <li class="address"></li>
+                                                <li class="phone"><a></a></li>
+                                                <li class="email"><a></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                     <div class="footer-widget links-widget">
-                                        <h5>Tokyo</h5>
+                                        
+                                        <h5>Mumbai</h5>
                                         <div class="info">
                                             <ul>
-                                                <li class="address">Circle Streeet 43, Allen watson</li>
-                                                <li class="phone"><a href="tel:+18(0)443456">T: +18 (0) 443 456</a></li>
-                                                <li class="email"><a href="mailto:archwayus@support.com">E: archwayus@support.com</a></li>
-                                            </ul>
-                                        </div>
-                                        <h5>Paris</h5>
-                                        <div class="info">
-                                            <ul>
-                                                <li class="address">Level 1/302 Swanston St, Carlton VIC  <br>2042, Australia</li>
-                                                <li class="phone"><a href="tel:+23(0)132456">T: +23 (0) 132 456</a></li>
-                                                <li class="email"><a href="mailto:archwayus@support.com">E: archwayaut@info.com</a></li>
+                                                <li class="address">1212, Bharat Mill MAHDA complex, Ganapatrao Kadam Marg, Lower Parel, Mumbai 400013</li>
+                                                <li class="phone"><a href="tel:+91 7028103688">T: +91 7028103688</a></li>
+                                                <li class="email"><a href="mailto:contact@sigmainterio.in">E: contact@sigmainterio.in</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -669,7 +702,7 @@
         <div class="f-bottom">
             <div class="auto-container">
                 <div class="inner clearfix">
-                    <div class="copyright">&copy; 2023 Archway WordPress Theme</div>
+                    <div class="copyright">&copy; 2025 Designed By Nass Technologies</div>
                 </div>
             </div>
         </div>
@@ -691,5 +724,27 @@
 <script src="js/appear.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/custom-script.js"></script>
+<!-- JavaScript Files -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#slider5").responsiveSlides({
+            auto: true,
+            pager: false,
+            nav: false,
+            speed: 800,
+            timeout: 4000,
+            namespace: "callbacks"
+        });
+    });
+</script>
+
+</body>
+</html>
+
 </body>
 </html>

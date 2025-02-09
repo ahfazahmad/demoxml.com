@@ -267,12 +267,13 @@ body {
 a{
   text-decoration: none;
   cursor: pointer;
-  color: #ffa200;
+  color: #000000;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-weight: 800;
 }
 
 a:hover, a:focus, a:visited, a:active, button:active, button:focus {
